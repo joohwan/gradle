@@ -1,0 +1,7 @@
+task hello << {
+	println "Hello gradle"
+}
+
+hello.doLast {
+	println "Greetings from the $hello.name task"
+}		
